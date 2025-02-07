@@ -1,7 +1,7 @@
 {
   "name": "ap-style",
   "displayName": "Transform to AP Title Style",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "publisher": "don1138",
   "description": "A VS Code extension to format selected text in the Article Title style specified by the Associated Press Style Guide. It capitalizes the selected text, and then converts the prepositions to lowercase.",
   "author": {

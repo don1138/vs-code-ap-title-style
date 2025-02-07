@@ -2,7 +2,7 @@
 // Import the module and reference it with the alias vscode in your code below
 const vscode = require('vscode');
 
-// Change selected text to Title Case, then make propositions Lower Case
+// Change selected text to Title Case, then make prepositions Lower Case
 function applyAPTitleStyle(text) {
   const words = text.split(/\b/); // Split the text into words using word boundaries
 
@@ -40,20 +40,21 @@ function applyAPTitleStyle(text) {
 
 function activate(context) {
   console.log("Extension activated");
+
   let disposable = vscode.commands.registerCommand('extension.applyAPTitleStyle', () => {
     // Get the active text editor
     const editor = vscode.window.activeTextEditor;
     if (editor) {
-      // Get the selected text
-      const selection = editor.selection;
-      const text = editor.document.getText(selection);
+      const document = editor.document;
+      const selections = editor.selections;
 
-      // Call your function to modify the text
-      const modifiedText = applyAPTitleStyle(text);
-
-      // Replace the selected text with the modified text
+      // Apply the transformation to each selection
       editor.edit((editBuilder) => {
-        editBuilder.replace(selection, modifiedText);
+        selections.forEach((selection) => {
+          const text = document.getText(selection);
+          const modifiedText = applyAPTitleStyle(text);
+          editBuilder.replace(selection, modifiedText);
+        });
       });
     }
   });
