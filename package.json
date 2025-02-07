@@ -1,0 +1,57 @@
+{
+  "name": "ap-style",
+  "displayName": "Transform to AP Title Style",
+  "version": "1.0.0",
+  "publisher": "don1138",
+  "description": "A VS Code extension to format selected text in the Article Title style specified by the Associated Press Style Guide. It capitalizes the selected text, and then converts the prepositions to lowercase.",
+  "author": {
+    "name": "Don Schnitzius"
+  },
+  "categories": [
+    "Formatters"
+  ],
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#2a2a2a",
+    "theme": "dark"
+  },
+  "pricing": "Free",
+  "activationEvents": [],
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.applyAPTitleStyle",
+        "title": "Transform to AP Title Style"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.83.0",
+    "@types/mocha": "^10.0.2",
+    "@types/node": "18.x",
+    "eslint": "^8.50.0",
+    "glob": "^10.3.3",
+    "mocha": "^10.2.0",
+    "typescript": "^5.2.2",
+    "@vscode/test-electron": "^2.3.4"
+  },
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/don1138/vs-code-ap-title-style/issues",
+    "email": "don@contoso.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/don1138/vs-code-ap-title-style.git"
+  },
+  "homepage": "https://github.com/don1138/vs-code-ap-title-style"
+}
