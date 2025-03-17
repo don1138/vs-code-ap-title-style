@@ -10,11 +10,11 @@ It capitalizes the selected text, and then converts the prepositions to lowercas
 
 ### 1.2.0
 
-- Bugfix: Always capitalize first word of a selection, even if it is a preposition
+- **Bugfix:** Always capitalize first word of a selection, even if it is a preposition
 
 ### 1.1.0
 
-- Bugfix: Apply to multiple selections
+- **Bugfix:** Apply to multiple selections
 
 ### 1.0.0
 
