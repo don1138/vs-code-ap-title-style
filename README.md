@@ -1,6 +1,6 @@
 # Transform to AP Title Style
 
-A VS Code extension to format selected text in the Article Title style specified by the Associated Press Style Guide.
+A VS Code extension that formats selected text into the Article Title style according to the Associated Press Style Guide.
 
 ## Features
 
