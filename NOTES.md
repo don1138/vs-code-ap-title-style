@@ -347,3 +347,12 @@ Your extension is now installed and ready for use within your local Visual Studi
 
 ---
 
+### Terminal Commands
+
+```
+vsce
+vsce package
+git add -A
+git commit -m "Transform to AP Title Style - Version 1.1.0"
+git log
+```
