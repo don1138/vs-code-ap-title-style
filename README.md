@@ -6,8 +6,6 @@ A VS Code extension to format selected text in the Article Title style specified
 
 It capitalizes the selected text, and then converts the prepositions to lowercase.
 
----
-
 ## Release Notes
 
 ### 1.2.0
